@@ -1,0 +1,7 @@
+.venv*
+__pycache__/
+uv.lock
+from_pretrained/
+output/
+*.pyc
+.DS_Store
