@@ -16,13 +16,13 @@ class AdaptiveKernelFactory(KernelFactory):
     """
 
     def __init__(self, n_dim=None, kernel_name_user='Matern'):
-        self.n_dim = n_dim
+        self.n_dim = None
         self.kernel_name_user = kernel_name_user
     
     def __call__(self, searchspace, train_x, train_y):
 
         if self.n_dim is None:
-            raise ValueError("n_dim must be given for adaptive prior!")
+            self.n_dim = len(searchspace.comp_rep_columns)
         
         x = math.sqrt(self.n_dim)
         l_mean = 0.4 * x + 4.0 # decided by fitting the result points.
