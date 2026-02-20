@@ -10,9 +10,15 @@ For all the code and data used in the paper **Leveraging Hidden-Space Representa
 
 install git
 
-download this repo: 
-git clone https://github.com/chimie-paristech-CTM/HSF-ChemBO-tutorial
+```
+https://git-scm.com/install/mac
+```
 
+download this repo: 
+
+```
+git clone https://github.com/chimie-paristech-CTM/HSF-ChemBO-tutorial
+```
 
 install [uv package manager](https://docs.astral.sh/uv/getting-started/installation/)
 ```
